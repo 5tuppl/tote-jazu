@@ -9,7 +9,7 @@ Author: Yerali Agibayev, Astana IT University.
 Status: **work-in-progress / feasibility study.** Stage 0 of a larger pipeline.
 
 ---
-
+#    ![GRPO training](results/grpo_training.gif)
 ## What this is (and is not)
 
 This repository isolates and validates **stage 3** of an intended three-stage
