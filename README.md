@@ -12,6 +12,7 @@ Status: **work-in-progress / feasibility study.** Stage 0 of a larger pipeline.
 #    ![GRPO training](results/grpo_training.gif)
 ## What this is (and is not)
 
+
 This repository isolates and validates **stage 3** of an intended three-stage
 pipeline:
 
@@ -35,7 +36,7 @@ rather than hides — the baselines it does not beat, with an explanation of why
 | **SFT → GRPO (RLVR, 1500)**    | **0.131**     | **0.418** |
 | SFT (full, 2500 steps)         | 0.286         | 0.277 |
 
-**Read this honestly:** GRPO improves its weak base by 31% relative CER using
+**GRPO improves its weak base by 31% relative CER using
 only the verifiable reward, but does **not** surpass the lookup table or full
 SFT. On a near-deterministic synthetic cipher with no morphological context,
 that is the *expected* boundary of RLVR — the method is predicted to help in the
