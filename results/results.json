@@ -1,0 +1,47 @@
+{
+  "testbed": {
+    "corpus_words": 420,
+    "train": 336,
+    "test": 84,
+    "src_vocab": 29,
+    "tgt_vocab": 40,
+    "homograph_pairs": 5,
+    "seed": 0
+  },
+  "held_out_full_test_n84": {
+    "lookup_table": {
+      "exact": 0.14285714285714285,
+      "cer": 0.29685374149659866
+    },
+    "sft_light_900": {
+      "exact": 0.03571428571428571,
+      "cer": 0.6051587301587302,
+      "steps": 900
+    },
+    "sft_light_then_grpo_1500": {
+      "exact": 0.13095238095238096,
+      "cer": 0.4175453514739229
+    },
+    "sft_full_2500": {
+      "exact": 0.2857142857142857,
+      "cer": 0.2765589569160998,
+      "steps": 2500
+    }
+  },
+  "grpo": {
+    "steps": 1500,
+    "group_size": 6,
+    "kl_beta": 0.04,
+    "temp_anneal": [
+      1.1,
+      0.6
+    ],
+    "reward": "(1 - CER) + 0.5*exact_match",
+    "base_pre_grpo_full_test": {
+      "exact": 0.036,
+      "cer": 0.605
+    },
+    "monitoring_subset_n30_curve": "results/grpo_curve.json"
+  },
+  "note": "All numbers produced on CPU, fixed seed=0, reproducible via run_all.sh"
+}

@@ -1,0 +1,7 @@
+# Pinned to the environment that produced results.json (CPU only).
+# torch CPU build is sufficient; no GPU required for any stage in this repo.
+torch==2.12.1
+matplotlib==3.10.8
+
+# LaTeX (for compiling paper/paper.tex) is a system dependency, not pip:
+#   Debian/Ubuntu:  sudo apt-get install texlive-latex-recommended texlive-publishers texlive-fonts-recommended
